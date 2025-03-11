@@ -1,2 +1,55 @@
-Multiplayer Sanke Game!
-Collect the most food before the timer runs out
+# DSC Snake Game Tournament
+
+## Overview
+This is a simple two-player Snake game developed for the DSC Snake Game Tournament. The game is built using **HTML, CSS, and JavaScript**, without any external libraries or backend databases.
+
+## Features
+- **Two-player gameplay**: Player 1 controls a green snake, and Player 2 controls a blue snake.
+- **Grid-based movement**: Players navigate using `WASD` (Player 1) and arrow keys (Player 2).
+- **Food collection**: Snakes grow when they eat food.
+- **Collision mechanics**:
+  - Snakes freeze temporarily upon self or opponent collision.
+  - Snakes freeze for 2 seconds if they hit the border.
+- **Game timer**: 3-minute countdown to determine the winner.
+- **Score tracking**: Scores update dynamically as players eat food.
+- **Animated snake eyes**: Snakes have animated eyes that adjust to movement direction.
+
+## How to Play
+1. **Start the game**: Click the "Start Game" button on the home screen.
+2. **Player controls**:
+   - **Player 1 (Green Snake)**: Move with `W` (up), `A` (left), `S` (down), `D` (right).
+   - **Player 2 (Blue Snake)**: Move with arrow keys.
+3. **Objective**:
+   - Eat food to grow your snake.
+   - Avoid hitting yourself, the opponent, or the game borders.
+   - The player with the highest score at the end of 3 minutes wins.
+4. **Game Over**:
+   - When the timer reaches 0, the game displays final scores.
+   - Click "Back" to return to the home screen.
+
+## Technical Details
+- **Canvas-based rendering**: The game uses an HTML `<canvas>` element for graphics.
+- **JavaScript game loop**: Runs at 10 frames per second (`setInterval` function).
+- **Snake behavior**:
+  - Movement is grid-based (20px per step).
+  - Directional changes are handled in the `handleKeyPress` function.
+  - Freezing mechanics prevent movement for a short duration on collisions.
+- **Food generation**: Randomly placed within the canvas boundaries.
+- **Score updates**: Displayed in real-time in the game UI.
+
+## Future Improvements
+- Add sound effects for eating food and collisions.
+- Implement power-ups for speed boosts or extra points.
+- Enhance graphics with animations and smoother transitions.
+
+## Requirements
+- A modern web browser (Chrome, Firefox, Edge, etc.).
+- No additional installations required.
+
+## Running the Game
+Simply open the `index.html` file in a browser to play.
+
+---
+
+If you have any questions or want additional features, feel free to suggest!
+
