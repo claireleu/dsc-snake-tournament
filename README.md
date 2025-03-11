@@ -40,4 +40,4 @@ This is a simple two-player Snake game developed for the DSC W25 BOT Event. The 
 - Enhance graphics with animations and smoother transitions.
 
 ## Running the Game
-Simply open the `index.html` file in a browser to play.
+Open the `index.html` file in a browser to play.
